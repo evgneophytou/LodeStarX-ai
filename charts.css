@@ -1,0 +1,80 @@
+/* LodeStarX.ai — chart styles */
+.chart-shell{
+  width:100%;height:100%;
+  background:linear-gradient(160deg, var(--navy-2), var(--navy));
+  padding:16px;display:flex;flex-direction:column;gap:10px;
+  color:var(--paper);font-family:'Inter',sans-serif;
+  position:relative;overflow:hidden;
+}
+.chart-shell::before{
+  content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+                   linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size:32px 32px;mask-image:radial-gradient(circle at 50% 50%, black, transparent 80%);
+  pointer-events:none;
+}
+.chart-shell > *{position:relative}
+.chart-eyebrow{
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:0.16em;color:rgba(246,243,236,0.55);
+}
+.chart-foot{
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:0.06em;color:rgba(246,243,236,0.6);margin-top:auto;
+}
+/* discovery bars */
+.chart-bars{display:flex;flex-direction:column;gap:14px;flex:1;justify-content:center}
+.cb{display:grid;grid-template-columns:90px 1fr 50px;gap:10px;align-items:center}
+.cb-label{
+  font-family:'Archivo Narrow',sans-serif;font-weight:700;
+  text-transform:uppercase;font-size:13px;color:rgba(246,243,236,0.78);
+}
+.cb-label.cb-hl{color:var(--yellow)}
+.cb-track{height:10px;background:rgba(255,255,255,0.07);border-radius:5px;overflow:hidden}
+.cb-fill{
+  display:block;height:100%;width:0;
+  background:linear-gradient(90deg,#7a5230,#c97b3a);
+  border-radius:5px;animation:cbGrow 1.4s cubic-bezier(.2,.7,.2,1) forwards;--w:50%;
+}
+.cb-fill-hl{background:linear-gradient(90deg,#c97b3a,#f5c518)}
+@keyframes cbGrow{to{width:var(--w)}}
+.cb-val{
+  font-family:'JetBrains Mono',monospace;font-size:12px;
+  color:rgba(246,243,236,0.65);text-align:right;
+}
+.cb-val-hl{color:var(--yellow);font-weight:600}
+/* cost lines */
+.cost-svg, .market-svg{width:100%;height:160px;display:block;flex:1}
+.cost-line-a, .cost-line-b{
+  stroke-dasharray:600;stroke-dashoffset:600;
+  animation:drawL 1.8s ease-out forwards;
+}
+.cost-line-b{animation-delay:.4s}
+.cost-fill{opacity:0;animation:fadeIn .8s 1.2s ease forwards}
+@keyframes drawL{to{stroke-dashoffset:0}}
+.chart-legend{
+  display:flex;gap:18px;font-family:'JetBrains Mono',monospace;font-size:10px;
+  color:rgba(246,243,236,0.7);letter-spacing:0.06em;
+}
+.chart-legend i{
+  display:inline-block;width:10px;height:3px;margin-right:6px;vertical-align:middle;border-radius:2px;
+}
+/* donut */
+.donut-wrap{position:relative;width:140px;height:140px;align-self:center;margin:auto}
+.donut{width:100%;height:100%}
+.donut-arc{
+  animation:donutFill 1.6s cubic-bezier(.2,.7,.2,1) forwards;
+}
+@keyframes donutFill{to{stroke-dashoffset:117.6}} /* 61% of 301.6 */
+.donut-center{
+  position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+}
+.donut-num{
+  font-family:'Archivo Narrow',sans-serif;font-weight:800;font-size:32px;color:var(--yellow);line-height:1;
+}
+.donut-num span{font-size:18px;margin-left:2px}
+.donut-label{
+  font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.12em;
+  text-transform:uppercase;color:rgba(246,243,236,0.6);margin-top:4px;
+}
+/* market bars handled inline via JS */
