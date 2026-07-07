@@ -62,7 +62,7 @@
           <div class="db-eyebrow">// LIVE · TARGET RANKING</div>
           <div class="db-title">Tenant · Northway-Aus · Block 14</div>
         </div>
-        <div class="db-pulse"><span class="db-dot"></span> 11 agents reasoning</div>
+        <div class="db-pulse"><span class="db-dot"></span> 11 workflows reasoning</div>
       </div>
       <div class="db-grid">
         <div class="db-map">
@@ -114,12 +114,12 @@
     `;
   }
 
-  function buildAgentDashboard(host) {
+  function buildWorkflowDashboard(host) {
     host.innerHTML = `
       <div class="db-head">
         <div>
-          <div class="db-eyebrow">// AGENT FLEET · LIVE</div>
-          <div class="db-title">11 specialized agents · 14,210 decisions today</div>
+          <div class="db-eyebrow">// AI WORKFLOW FLEET · LIVE</div>
+          <div class="db-title">11 specialized workflows · 14,210 decisions today</div>
         </div>
         <div class="db-pulse"><span class="db-dot"></span> healthy</div>
       </div>
@@ -202,7 +202,7 @@
 
   function mountDashboards() {
     document.querySelectorAll('[data-dash="targets"]').forEach(buildTargetDashboard);
-    document.querySelectorAll('[data-dash="agents"]').forEach(buildAgentDashboard);
+    document.querySelectorAll('[data-dash="workflows"]').forEach(buildWorkflowDashboard);
     document.querySelectorAll('[data-dash="fusion"]').forEach(buildFusionDashboard);
   }
 

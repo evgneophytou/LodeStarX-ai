@@ -906,7 +906,7 @@ p{line-height:1.6}
       <div class="card">
         <div class="card-num">EDGE.02 / SCALE</div>
         <h3>Globally scalable</h3>
-        <p>One platform serves a junior in Quebec, a major in Western Australia, and a sovereign-wealth-backed program in Saudi — same code, same agents, isolated tenants.</p>
+        <p>One platform serves a junior in Quebec, a major in Western Australia, and a sovereign-wealth-backed program in Saudi — same code, same AI workflows, isolated tenants.</p>
       </div>
       <div class="card">
         <div class="card-num">EDGE.03 / NETWORK</div>
@@ -923,9 +923,9 @@ p{line-height:1.6}
     <div class="grid grid-2" style="gap:48px;align-items:center">
       <div>
         <div class="eyebrow eyebrow-dark" style="margin-bottom:18px">// Why we win</div>
-        <h2 class="display-md">First-mover<br/>in agentic<br/>exploration AI.</h2>
+        <h2 class="display-md">First-mover in<br/>AI-driven<br/>exploration.</h2>
         <ul class="list-clean" style="margin-top:32px">
-          <li><div><strong style="font-family:'Archivo Narrow';text-transform:uppercase">Category-defining</strong><br/><span style="color:rgba(246,243,236,0.7);font-size:14px">No competitor has shipped autonomous agents into a customer's tenant. We are the category.</span></div></li>
+          <li><div><strong style="font-family:'Archivo Narrow';text-transform:uppercase">Category-defining</strong><br/><span style="color:rgba(246,243,236,0.7);font-size:14px">No competitor has shipped autonomous AI workflows into a customer's tenant. We are the category.</span></div></li>
           <li><div><strong style="font-family:'Archivo Narrow';text-transform:uppercase">Capital-light</strong><br/><span style="color:rgba(246,243,236,0.7);font-size:14px">Software margins, no physical drilling exposure, no commodity correlation.</span></div></li>
           <li><div><strong style="font-family:'Archivo Narrow';text-transform:uppercase">Compounding intelligence</strong><br/><span style="color:rgba(246,243,236,0.7);font-size:14px">Every dataset, every program, every customer makes the underlying engine sharper.</span></div></li>
           <li><div><strong style="font-family:'Archivo Narrow';text-transform:uppercase">Aligned with policy tailwinds</strong><br/><span style="color:rgba(246,243,236,0.7);font-size:14px">IRA, EU CRMA, AUKUS — every major economy is now financing critical-mineral discovery.</span></div></li>
@@ -971,20 +971,6 @@ p{line-height:1.6}
   </div>
 </section>
 
-<!-- LOGOS / BACKERS -->
-<section class="band band-light band-tight" style="padding-top:0">
-  <div class="shell">
-    <div class="logo-bar">
-      <span style="color:var(--ink-2);font-family:'JetBrains Mono';font-size:11px;letter-spacing:0.16em">// BACKED BY</span>
-      <span>Pacific Frontier</span>
-      <span>Critical Materials Fund</span>
-      <span>Northway Capital</span>
-      <span>Geological Ventures</span>
-      <span>+ angels from BHP, Rio, S&P</span>
-    </div>
-  </div>
-</section>
-
 <!-- CTA -->
 <section class="band band-light band-tight" id="cta" style="padding-top:0">
   <div class="shell">
@@ -1014,7 +1000,6 @@ p{line-height:1.6}
       <div><h4>Company</h4><ul>
         <li><a href="investors.html">Investors</a></li>
         <li><a href="careers.html">Careers</a></li>
-        <li><a href="press.html">Press</a></li>
       </ul></div>
       <div><h4>Contact</h4><ul>
         <li>hello@lodestarx.ai</li>
@@ -1096,7 +1081,7 @@ p{line-height:1.6}
           <div class="db-eyebrow">// LIVE · TARGET RANKING</div>
           <div class="db-title">Tenant · Northway-Aus · Block 14</div>
         </div>
-        <div class="db-pulse"><span class="db-dot"></span> 11 agents reasoning</div>
+        <div class="db-pulse"><span class="db-dot"></span> 11 workflows reasoning</div>
       </div>
       <div class="db-grid">
         <div class="db-map">
@@ -1148,12 +1133,12 @@ p{line-height:1.6}
     `;
   }
 
-  function buildAgentDashboard(host) {
+  function buildWorkflowDashboard(host) {
     host.innerHTML = `
       <div class="db-head">
         <div>
-          <div class="db-eyebrow">// AGENT FLEET · LIVE</div>
-          <div class="db-title">11 specialized agents · 14,210 decisions today</div>
+          <div class="db-eyebrow">// AI WORKFLOW FLEET · LIVE</div>
+          <div class="db-title">11 specialized workflows · 14,210 decisions today</div>
         </div>
         <div class="db-pulse"><span class="db-dot"></span> healthy</div>
       </div>
@@ -1236,7 +1221,7 @@ p{line-height:1.6}
 
   function mountDashboards() {
     document.querySelectorAll('[data-dash="targets"]').forEach(buildTargetDashboard);
-    document.querySelectorAll('[data-dash="agents"]').forEach(buildAgentDashboard);
+    document.querySelectorAll('[data-dash="workflows"]').forEach(buildWorkflowDashboard);
     document.querySelectorAll('[data-dash="fusion"]').forEach(buildFusionDashboard);
   }
 

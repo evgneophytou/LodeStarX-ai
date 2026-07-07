@@ -844,18 +844,18 @@ p{line-height:1.6}
       </div>
       <div class="eyebrow eyebrow-dark" style="margin-bottom:22px">// Technology · Architecture</div>
       <h1 class="display">
-        The first agentic<br/>
-        AI platform for<br/>
+        The first AI workflow<br/>
+        platform for<br/>
         <span style="color:var(--yellow)">mineral discovery.</span>
       </h1>
       <p class="lead lead-dark" style="margin-top:28px;max-width:62ch">
-        Four reasoning layers, hundreds of geological data sources, and a swarm of autonomous
-        agents that don't stop until they've earned the next drill recommendation.
+        Four reasoning layers, hundreds of geological data sources, and a stack of autonomous
+        AI workflows that don't stop until they've earned the next drill recommendation.
       </p>
       <div class="hero-meta">
         <span>Layers · 4</span>
         <span>Models in ensemble · 38</span>
-        <span>Agents in fleet · 11 specializations</span>
+        <span>Workflows in fleet · 11 specializations</span>
       </div>
     </div>
   </div>
@@ -871,7 +871,7 @@ p{line-height:1.6}
       </div>
       <p style="color:rgba(246,243,236,0.72);max-width:48ch">
         Each layer is independently auditable. Every recommendation traces back to the raw data,
-        the model that interpreted it, and the agent that decided it mattered.
+        the model that interpreted it, and the AI workflow that decided it mattered.
       </p>
     </div>
 
@@ -907,8 +907,8 @@ p{line-height:1.6}
       <div class="arch-row">
         <div class="arch-num">03</div>
         <div>
-          <h3>Agentic Workflow Layer <span style="color:var(--yellow);font-size:13px;letter-spacing:0.1em;display:inline-block;vertical-align:middle;margin-left:8px;font-family:'JetBrains Mono'">// KEY DIFFERENTIATOR</span></h3>
-          <p>Autonomous agents don't just predict — they ask, refine, and act.</p>
+          <h3>AI Workflow Layer <span style="color:var(--yellow);font-size:13px;letter-spacing:0.1em;display:inline-block;vertical-align:middle;margin-left:8px;font-family:'JetBrains Mono'">// KEY DIFFERENTIATOR</span></h3>
+          <p>Autonomous AI workflows don't just predict — they ask, refine, and act.</p>
         </div>
         <div class="arch-bullets">
           <span>Identify gaps in the dataset</span>
@@ -935,17 +935,17 @@ p{line-height:1.6}
   </div>
 </section>
 
-<!-- AGENT FLEET DASHBOARD -->
+<!-- AI WORKFLOW FLEET DASHBOARD -->
 <section class="band band-dark band-tight">
   <div class="shell">
     <div class="kicker-row" style="margin-bottom:24px">
       <div>
-        <div class="eyebrow eyebrow-dark" style="margin-bottom:14px">// Live agent activity</div>
-        <h2 class="display-md">Eleven agents,<br/>working together.</h2>
+        <div class="eyebrow eyebrow-dark" style="margin-bottom:14px">// Live workflow activity</div>
+        <h2 class="display-md">Eleven AI workflows,<br/>running together.</h2>
       </div>
-      <p style="color:rgba(246,243,236,0.72);max-width:46ch">Every reasoning step is logged, attributed to a specific agent, and replayable for audit.</p>
+      <p style="color:rgba(246,243,236,0.72);max-width:46ch">Every reasoning step is logged, attributed to a specific workflow, and replayable for audit.</p>
     </div>
-    <div class="dashboard" data-dash="agents"></div>
+    <div class="dashboard" data-dash="workflows"></div>
   </div>
 </section>
 
@@ -963,12 +963,12 @@ p{line-height:1.6}
       </div>
       <div>
         <div class="ph ph-copper" style="aspect-ratio:5/4;border-radius:var(--radius);overflow:hidden">
-          <span class="ph-label">img · agent-conversation.jpg</span>
+          <span class="ph-label">img · workflow-conversation.jpg</span>
         </div>
         <div class="grid grid-2" style="margin-top:16px;gap:16px">
           <div class="card" style="padding:20px">
             <div class="card-num">FLEET</div>
-            <h3 style="font-size:18px">11 agent roles</h3>
+            <h3 style="font-size:18px">11 workflow roles</h3>
             <p>Targeting · Fusion · QA · Verification · Hypothesis · Risk · Reporting · & more.</p>
           </div>
           <div class="card" style="padding:20px">
@@ -1056,7 +1056,6 @@ p{line-height:1.6}
       <div><h4>Company</h4><ul>
         <li><a href="investors.html">Investors</a></li>
         <li><a href="careers.html">Careers</a></li>
-        <li><a href="press.html">Press</a></li>
       </ul></div>
       <div><h4>Contact</h4><ul>
         <li>hello@lodestarx.ai</li>
@@ -1138,7 +1137,7 @@ p{line-height:1.6}
           <div class="db-eyebrow">// LIVE · TARGET RANKING</div>
           <div class="db-title">Tenant · Northway-Aus · Block 14</div>
         </div>
-        <div class="db-pulse"><span class="db-dot"></span> 11 agents reasoning</div>
+        <div class="db-pulse"><span class="db-dot"></span> 11 workflows reasoning</div>
       </div>
       <div class="db-grid">
         <div class="db-map">
@@ -1190,12 +1189,12 @@ p{line-height:1.6}
     `;
   }
 
-  function buildAgentDashboard(host) {
+  function buildWorkflowDashboard(host) {
     host.innerHTML = `
       <div class="db-head">
         <div>
-          <div class="db-eyebrow">// AGENT FLEET · LIVE</div>
-          <div class="db-title">11 specialized agents · 14,210 decisions today</div>
+          <div class="db-eyebrow">// AI WORKFLOW FLEET · LIVE</div>
+          <div class="db-title">11 specialized workflows · 14,210 decisions today</div>
         </div>
         <div class="db-pulse"><span class="db-dot"></span> healthy</div>
       </div>
@@ -1278,7 +1277,7 @@ p{line-height:1.6}
 
   function mountDashboards() {
     document.querySelectorAll('[data-dash="targets"]').forEach(buildTargetDashboard);
-    document.querySelectorAll('[data-dash="agents"]').forEach(buildAgentDashboard);
+    document.querySelectorAll('[data-dash="workflows"]').forEach(buildWorkflowDashboard);
     document.querySelectorAll('[data-dash="fusion"]').forEach(buildFusionDashboard);
   }
 

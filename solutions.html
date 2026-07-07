@@ -845,7 +845,7 @@ p{line-height:1.6}
       </h1>
       <p class="lead lead-dark" style="margin-top:40px;max-width:62ch">
         Four production-ready solutions, each replacing a multi-month manual workflow with
-        an always-on agentic system that never loses context, never forgets a survey, and never
+        an always-on AI workflow system that never loses context, never forgets a survey, and never
         argues about whose spreadsheet is canonical.
       </p>
     </div>
@@ -904,7 +904,7 @@ p{line-height:1.6}
         <div style="padding:28px">
           <div class="card-num">SOL.03 / COST</div>
           <h3>Cost Reduction</h3>
-          <p>Replace months of manual analysis with hours of agentic reasoning — and prioritize the targets where the next dollar of capex actually matters.</p>
+          <p>Replace months of manual analysis with hours of AI workflow reasoning — and prioritize the targets where the next dollar of capex actually matters.</p>
           <ul class="list-clean">
             <li>Cut analyst-hours by an average of 78%</li>
             <li>Rank programs by expected return per dollar</li>
@@ -954,7 +954,7 @@ p{line-height:1.6}
         <h2 class="display-md" data-cc-id="cc-14" style="">A typical program,<br>end-to-end in hours.</h2>
       </div>
       <p style="color:rgba(246,243,236,0.72);max-width:46ch" data-cc-id="cc-13">
-        From licence-block upload to a ranked drill plan — the agentic loop runs continuously,
+        From licence-block upload to a ranked drill plan — the AI workflow loop runs continuously,
         with every step logged for your auditors.
       </p>
     </div>
@@ -963,7 +963,7 @@ p{line-height:1.6}
       <div class="card card-dark">
         <div class="card-num" style="color:var(--yellow)">STEP 01 · 0:00</div>
         <h3>Ingest</h3>
-        <p>Upload licence boundary or AOI; agents pull every relevant dataset within range.</p>
+        <p>Upload licence boundary or AOI; AI workflows pull every relevant dataset within range.</p>
       </div>
       <div class="card card-dark">
         <div class="card-num" style="color:var(--yellow)">STEP 02 · 1:30</div>
@@ -973,7 +973,7 @@ p{line-height:1.6}
       <div class="card card-dark">
         <div class="card-num" style="color:var(--yellow)">STEP 03 · 3:45</div>
         <h3>Reason</h3>
-        <p>Hypothesis-refiner agents propose, test, and discard scenarios until evidence converges.</p>
+        <p>Hypothesis-refiner workflows propose, test, and discard scenarios until evidence converges.</p>
       </div>
       <div class="card card-dark">
         <div class="card-num" style="color:var(--yellow)">STEP 04 · 6:10</div>
@@ -1042,7 +1042,6 @@ p{line-height:1.6}
       <div><h4>Company</h4><ul>
         <li><a href="investors.html">Investors</a></li>
         <li><a href="careers.html">Careers</a></li>
-        <li><a href="press.html">Press</a></li>
       </ul></div>
       <div><h4>Contact</h4><ul>
         <li>hello@lodestarx.ai</li>
@@ -1126,7 +1125,7 @@ p{line-height:1.6}
           <div class="db-eyebrow">// LIVE · TARGET RANKING</div>
           <div class="db-title">Tenant · Northway-Aus · Block 14</div>
         </div>
-        <div class="db-pulse"><span class="db-dot"></span> 11 agents reasoning</div>
+        <div class="db-pulse"><span class="db-dot"></span> 11 workflows reasoning</div>
       </div>
       <div class="db-grid">
         <div class="db-map">
@@ -1178,12 +1177,12 @@ p{line-height:1.6}
     `;
   }
 
-  function buildAgentDashboard(host) {
+  function buildWorkflowDashboard(host) {
     host.innerHTML = `
       <div class="db-head">
         <div>
-          <div class="db-eyebrow">// AGENT FLEET · LIVE</div>
-          <div class="db-title">11 specialized agents · 14,210 decisions today</div>
+          <div class="db-eyebrow">// AI WORKFLOW FLEET · LIVE</div>
+          <div class="db-title">11 specialized workflows · 14,210 decisions today</div>
         </div>
         <div class="db-pulse"><span class="db-dot"></span> healthy</div>
       </div>
@@ -1266,7 +1265,7 @@ p{line-height:1.6}
 
   function mountDashboards() {
     document.querySelectorAll('[data-dash="targets"]').forEach(buildTargetDashboard);
-    document.querySelectorAll('[data-dash="agents"]').forEach(buildAgentDashboard);
+    document.querySelectorAll('[data-dash="workflows"]').forEach(buildWorkflowDashboard);
     document.querySelectorAll('[data-dash="fusion"]').forEach(buildFusionDashboard);
   }
 

@@ -868,7 +868,7 @@ p{line-height:1.6}
       </div>
       <div>
         <p class="lead lead-dark" style="font-size:17px">
-          Agentic AI doesn't just produce a heatmap and stop. Our agents identify gaps,
+          AI workflows don't just produce a heatmap and stop. Our AI workflows identify gaps,
           query the data they need, refine their hypotheses, and tell you what to do next —
           with reasoning chains your chief geologist can defend in front of a board.
         </p>
@@ -913,7 +913,7 @@ p{line-height:1.6}
         <div style="padding:32px">
           <div class="card-num">ADV.03 / SPEED</div>
           <h3>Weeks become hours</h3>
-          <p>What used to take a senior team six weeks of meetings, spreadsheets, and re-runs now takes a single agentic pass. Iterate the same number of times — but each one in an afternoon.</p>
+          <p>What used to take a senior team six weeks of meetings, spreadsheets, and re-runs now takes a single AI workflow pass. Iterate the same number of times — but each one in an afternoon.</p>
           <ul class="list-clean">
             <li>6.2-hour median target generation</li>
             <li>Re-run after every new dataset arrival</li>
@@ -1038,7 +1038,6 @@ p{line-height:1.6}
       <div><h4>Company</h4><ul>
         <li><a href="investors.html">Investors</a></li>
         <li><a href="careers.html">Careers</a></li>
-        <li><a href="press.html">Press</a></li>
       </ul></div>
       <div><h4>Contact</h4><ul>
         <li>hello@lodestarx.ai</li>
@@ -1120,7 +1119,7 @@ p{line-height:1.6}
           <div class="db-eyebrow">// LIVE · TARGET RANKING</div>
           <div class="db-title">Tenant · Northway-Aus · Block 14</div>
         </div>
-        <div class="db-pulse"><span class="db-dot"></span> 11 agents reasoning</div>
+        <div class="db-pulse"><span class="db-dot"></span> 11 workflows reasoning</div>
       </div>
       <div class="db-grid">
         <div class="db-map">
@@ -1172,12 +1171,12 @@ p{line-height:1.6}
     `;
   }
 
-  function buildAgentDashboard(host) {
+  function buildWorkflowDashboard(host) {
     host.innerHTML = `
       <div class="db-head">
         <div>
-          <div class="db-eyebrow">// AGENT FLEET · LIVE</div>
-          <div class="db-title">11 specialized agents · 14,210 decisions today</div>
+          <div class="db-eyebrow">// AI WORKFLOW FLEET · LIVE</div>
+          <div class="db-title">11 specialized workflows · 14,210 decisions today</div>
         </div>
         <div class="db-pulse"><span class="db-dot"></span> healthy</div>
       </div>
@@ -1260,7 +1259,7 @@ p{line-height:1.6}
 
   function mountDashboards() {
     document.querySelectorAll('[data-dash="targets"]').forEach(buildTargetDashboard);
-    document.querySelectorAll('[data-dash="agents"]').forEach(buildAgentDashboard);
+    document.querySelectorAll('[data-dash="workflows"]').forEach(buildWorkflowDashboard);
     document.querySelectorAll('[data-dash="fusion"]').forEach(buildFusionDashboard);
   }
 
